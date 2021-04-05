@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center center;
+  transition: background-image 1s ease-in-out;
+  color: white;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.time {
+  font-size: 6rem;
+}
+
+.focus {
+  max-width: 1600px;
+  outline: none;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.greeting-name {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1.name {
+  margin-left: 6px;
+  outline: none;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+.changeImg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+button:hover {
+  transition: 0s;
+  filter: grayscale(.8);
+}
+
+button:active,
+button:focus {
+  outline: 0;
+}
+
+button:active{
+  transform: scale(1.02)
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.281);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  margin: 20px;
+}
+
+.weather-icon {
+  font-size: 2rem;
+}
+
+
+.quote {
+  max-width: 1200px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.281);
+  margin-top: 50px;
+  margin: 0 auto;
+}
+
+blockquote {
+  text-align: justify;
+}
+
+figcaption {
+  text-align: right;
+  margin-top: 1em;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .time {
+    font-size: 6rem;
+  }
+
+  .changeImg, .btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .weather-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 400px) {
+  .time {
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    max-width: 300px;
+    font-size: 1.5rem;
+  }
+
+  .weather {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .date {
+    margin-top: 30px;
+  }
+
+  .quote, .focus {
+    max-width: 300px;
+  }
+}
